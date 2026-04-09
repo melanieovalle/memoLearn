@@ -9,6 +9,15 @@ body {
     background-color: #F5F5F5; 
 }
 
+h1, h2, h3 {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+p, button {
+    font-weight: 400;
+}
+
 button {
     font-size: 20px;
     padding: 10px 20px;
@@ -16,7 +25,7 @@ button {
     cursor: pointer; /* you can change what the cursor looks like! */
 }
 
-.card {
+.flashcard {
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -25,6 +34,6 @@ button {
     border-radius: 10px;
     background-color: #FAFAF5;
     border: 1px solid #E6E6E6;
-    width: 300px;
-    height: 200px;
+    width: 700px;
+    height: 400px;
 }
