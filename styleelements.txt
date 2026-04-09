@@ -1,3 +1,9 @@
 
 Fonts Newsreader:
 https://fonts.google.com/selection/embed
+
+1st Accent color/text color: 426B1F
+2nd Accent color: A4853D
+Page color: F5F5F5
+Flashcard color: FAFAF5
+Text color: 000000
