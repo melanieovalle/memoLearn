@@ -1,18 +1,47 @@
-body {
+.navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    padding: 30px 50px;
+    background-color: white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.logo {
+    font-family: serif;
+    font-size: 24px;
+    color: #426B1F;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+body {
+    background-color: #f9f9f9;
     text-align: center;
+    padding-top: 60px;
     font-family: 'Inter', sans-serif; 
     background-color: #F5F5F5; 
 }
 
-h1, h2, h3 {
+body > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/* h1, h2, h3 {
     font-weight: 500;
     margin: 5px 0;
-}
+} */
 
 p, button {
     font-weight: 400;
@@ -22,7 +51,7 @@ button {
     font-size: 20px;
     padding: 10px 20px;
     margin: 10px;
-    cursor: pointer; /* you can change what the cursor looks like! */
+    cursor: pointer; 
 }
 
 .flashcard {
@@ -36,4 +65,37 @@ button {
     border: 1px solid #E6E6E6;
     width: 700px;
     height: 400px;
+}
+
+.green-flashcard {
+    background-color: #426B1F;
+    color: white;
+    width: 350px;
+    margin: 0 auto 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.green-flashcard {
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+}
+
+.green-flashcard:hover {
+    background-color: #538528;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.green-flashcard h2 {
+    font-size: 20px;
+    font-weight: 300px;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.green-flashcard p {
+    font-size: 15px;
+    margin: 0;
+
 }
