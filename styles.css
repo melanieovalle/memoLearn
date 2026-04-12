@@ -6,11 +6,40 @@
     background-color: white;
 }
 
-.nav-right {
+.navbar h1 {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.0rem;
+    color: #426B1F;
+}
+
+/* div for nav bar on the welcome page */
+.nav_right {
     display: flex;
     align-items: center;
-    gap: 30px;
-    font-size: 14px;
+    gap: 40px;
+}
+
+.nav_right a {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav_right h3 {
+    margin: 0px;
+    font-family:'Inter', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF; 
+
+}       
+
+.greeting_box {
+    background-color: #538528;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .logo {
@@ -101,14 +130,13 @@ button {
 
 /* welcome page style */ 
 
-.header_welcome {
-    font-family: serif;
+.welcome_page {
+    margin-top: -65px; 
 }
 
-.nav_bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px;
-    background-color: white;
+.welcome_page h3 {
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
+
