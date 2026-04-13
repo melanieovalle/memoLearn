@@ -1,4 +1,7 @@
 /* melanies navbar- just to test for now*/
+/* ana added margin top to put the nav bar right on top of the page and improve
+the spacing for the flashcards */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -7,6 +10,8 @@
   padding: 0 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
+  margin-top: -65px;
+  margin-bottom: 80px;
 }
 .logo {
   font-size: 1.2rem;
@@ -73,17 +78,23 @@
 
 }       
 
+*/
 .greeting-box {
     background-color: #538528;
     border-radius: 10px;
     padding: 15px;
 }
 
+
+
+/*
 .logo {
     font-family: serif;
     font-size: 24px;
     color: #426B1F;
-} */
+} 
+
+*/
 
 .italic-text {
     font-style: italic;
@@ -198,6 +209,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .anterior {
@@ -219,7 +231,6 @@ button {
     background-color: #538528;
     border-radius: 10px;
     border: none;  
-    width: 100%; 
 
 }
 
@@ -233,6 +244,28 @@ button {
 .real-world {
     padding-top: 0px;
     margin-top: -65px;
+}
+
+.content-box h2 {
+    margin-bottom: 20px;
+}
+
+.content-box p {
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #2c2c2c;
+    text-align: left;
+    margin-top: 15px;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    padding: 0 10px;
+    border-left: 3px solid #538528;
+    padding-left: 15px;
+}
+
+.content-box ul {
+    font-size: 20px;
 }
 
 /*styling for diving in page */
