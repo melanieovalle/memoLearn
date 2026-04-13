@@ -206,7 +206,7 @@ button {
 }
 
 .buttons {
-  position: fixed;
+
   bottom: 30px;
   left: 30px;
   right: 30px;
@@ -272,6 +272,24 @@ button {
 }
 
 /*styling for diving in page */
+
+.page-header h1 {
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: normal;
+  color: #1a1a1a;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-style: italic;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #cccccc;
+  margin: 0 0 40px 0;
+}
 
 .inner-box {
     background-color: #FAFAF5;
