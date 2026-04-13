@@ -30,6 +30,10 @@
 .nav-links a:hover {
   color: #1e3f02;
 }
+.burger{
+    font-size: 0.95rem;
+    color: #426B1F;
+}
 /* .navbar {
     display: flex;
     justify-content: space-between;
