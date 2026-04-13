@@ -186,7 +186,7 @@ button {
     border: 2px solid #cdcccc;
     border-radius: 20px;
     max-width: 800px;
-    height: 500px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 40px;
@@ -206,10 +206,13 @@ button {
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .anterior {
