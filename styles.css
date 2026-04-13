@@ -214,7 +214,8 @@ button {
     color: #FFFFFF;
     background-color: #538528;
     border-radius: 10px;
-    border: none;   
+    border: none;  
+    width: 100%; 
 
 }
 
@@ -228,4 +229,49 @@ button {
 .real-world {
     padding-top: 0px;
     margin-top: -65px;
+}
+
+/*styling for diving in page */
+
+.inner-box {
+    background-color: #FAFAF5;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.inner-box h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inner-box ul {
+    text-align: left;
+    display: block;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/*styling for answer choices page*/
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.answer-btn {
+    width: 80%;
+    background-color: #9DB2BF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
