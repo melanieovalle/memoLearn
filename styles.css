@@ -129,9 +129,6 @@ button {
 /* for definition page */
 
 
-
-
-
 /* welcome page style */ 
 
 .welcome-page {
@@ -169,5 +166,35 @@ button {
  
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.anterior {
+    min-width: 300px;
+    white-space: nowrap;
+    color: #FFFFFF;
+    background-color: #A4853D;
+    border-radius: 10px;
+    border: none;   
+}   
 
+.next-page {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    min-width: 300px;
+    gap: 1px;
+    color: #FFFFFF;
+    background-color: #538528;
+    border-radius: 10px;
+    border: none;   
+
+}
+
+.next-page img {
+    width: 40px;
+    height: 40px;
+}
