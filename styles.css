@@ -5,6 +5,7 @@
     padding: 30px 50px;
     background-color: white;
     margin-bottom: 80px;
+    margin-top: -65px;
 }
 
 .navbar h1 {
@@ -31,7 +32,7 @@
 
 .nav-right h3 {
     margin: 0px;
-    font-family:'Inter', sans-serif;
+    font-family:'Times New Roman', times, serif;
     font-weight: 500;
     color: #FFFFFF; 
 
@@ -131,14 +132,6 @@ button {
 
 /* welcome page style */ 
 
-.welcome-page {
-    margin-top: -65px; 
-}
-
-.welcome-page h3 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
 /* box with content */
 
 .content-box {
@@ -197,4 +190,11 @@ button {
 .next-page img {
     width: 40px;
     height: 40px;
+}
+
+/* style for the real world page */ 
+
+.real-world {
+    padding-top: 0px;
+    margin-top: -65px;
 }
