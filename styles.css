@@ -5,40 +5,48 @@ the spacing for the flashcards */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 60px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: -65px;
+  position: fixed;
+  top:0;
+  width:100%;
+  box-sizing: border-box;
   margin-bottom: 80px;
+
+  /* margin-top: -65px;
+  margin-bottom: 80px; */
 }
 .logo {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: serif;
   color: #426B1F;
+  margin-left: 2rem;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    overflow: visible;
+    margin-right: 4rem;
 }
 .nav-links a {
-  text-decoration: none;
-  font-size: 0.95rem;
-  color: #426B1F;
-  transition: color 0.2s ease;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #426B1F;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #1e3f02;
+    color: #1e3f02;
 }
-.burger{
-    font-size: 0.95rem;
-    color: #426B1F;
-}
+
 /* .navbar {
     display: flex;
     justify-content: space-between;
@@ -79,6 +87,47 @@ the spacing for the flashcards */
 }       
 
 */
+
+/* HOME STYLES */
+
+.upload-container img {
+    height: 380px;
+    width: auto;
+    margin: 20px 0px;
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 2rem 2rem;
+    gap: 50px;
+    /* justify-content: center; */
+    
+}
+.home-section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.home-section h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.home-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+.home-section p {
+    font-family: 'Inter', sans-serif;;
+}
+
+
 .greeting-box {
     background-color: #538528;
     border-radius: 10px;
@@ -245,8 +294,8 @@ button {
 /* style for the real world page */ 
 
 .real-world {
-    padding-top: 0px;
-    margin-top: -65px;
+    /* padding-top: 0px; */
+    /* margin-top: -65px; */
 }
 
 .content-box h2 {
