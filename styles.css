@@ -6,7 +6,7 @@ the spacing for the flashcards */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 60px;
+  height: 65px;
   padding: 0 1rem;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
@@ -14,13 +14,13 @@ the spacing for the flashcards */
   top:0;
   width:100%;
   box-sizing: border-box;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 
   /* margin-top: -65px;
   margin-bottom: 80px; */
 }
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   font-family: serif;
   color: #426B1F;
@@ -38,7 +38,7 @@ the spacing for the flashcards */
 }
 .nav-links a {
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: #426B1F;
     transition: color 0.2s ease;
 }
@@ -46,47 +46,6 @@ the spacing for the flashcards */
 .nav-links a:hover {
     color: #1e3f02;
 }
-
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px;
-    background-color: white;
-    margin-bottom: 80px;
-    margin-top: -65px;
-}
-
-.navbar h1 {
-    margin: 0px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.0rem;
-    color: #426B1F;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-right a {
-    margin: 0px;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.nav-right h3 {
-    margin: 0px;
-    font-family:'Times New Roman', times, serif;
-    font-weight: 500;
-    color: #FFFFFF; 
-
-}       
-
-*/
 
 /* HOME STYLES */
 
@@ -385,10 +344,4 @@ button {
 
 .answer-btn:hover {
     background-color: #384751;
-}
-
-.answer-btn.selected {
-  background-color: #52768e;
-  color: white;
-  border-color: #52768e;
 }
