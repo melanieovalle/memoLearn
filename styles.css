@@ -250,6 +250,33 @@ button {
     height: 40px;
 }
 
+.start-btn {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    min-width: 200px;
+    width: 50%;
+    gap: 1px;
+    color: #FFFFFF;
+    background-color: #538528;
+    border-radius: 10px;
+    border: none;
+    max-height: 60px;
+}
+
+.start-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 700px; */
+    align-items: center;
+    margin: 0px auto;
+}
+
 /* style for the real world page */ 
 
 .real-world {
