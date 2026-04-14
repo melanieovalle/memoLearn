@@ -382,3 +382,13 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+.answer-btn:hover {
+    background-color: #384751;
+}
+
+.answer-btn.selected {
+  background-color: #52768e;
+  color: white;
+  border-color: #52768e;
+}
