@@ -27,12 +27,12 @@
     <hr class = "divider">
 
     <div style = "text-align: right; padding: 0 40px; margin-bottom: 20px;">
-        <button class = "filter-profile-btn.active">Default</button>
-        <button class = filter-profile-btn>A-Z</button>
-        <button class = filter-profile-btn>List view</button>
+        <button class = "filter-profile-btn active">Default</button>
+        <button class = "filter-profile-btn">A-Z</button>
+        <button class = "filter-profile-btn">List view</button>
     </div>
 
-    <div style = "display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+    <div class = "card-container">
         <div class = "profile-card">
             <img src = "placeholder.png" alt = "thumbnail" style = "width:100%; border-radius: 8px;">
             <h2>Algorithms - Introduction to Graphs</h2>
@@ -41,7 +41,7 @@
 
         <div class = "profile-card">
             <img src = "placeholder.png" alt = "thumbnail" style = "width:100%; border-radius: 8px;">
-            <h2>Human COmputer Interaction - Five Dimensions of Usability</h2>
+            <h2>Human Computer Interaction - Five Dimensions of Usability</h2>
             <p class = "italic-text">Dive back in!</p>
         </div>
 
@@ -51,6 +51,25 @@
             <p class = "italic-text">Dive back in!</p>
         </div>
         </div>
+        <script>
+            const container = document.querySelector(".card-container");
+            const buttons = document.querySelectorAll(".filter-profile-btn");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+
+                    const label = button.textContent.trim();
+
+                    if (label === "List view") {
+                        container.classList.add("list-view");
+                    } else {
+                        container.classList.remove("list-view");
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
         

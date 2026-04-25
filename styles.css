@@ -395,7 +395,19 @@ button {
     background-color: #426B1F;
     color: white;
     border: none;
+}
 
+.list-view {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 
