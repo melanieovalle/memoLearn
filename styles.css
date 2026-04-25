@@ -372,6 +372,17 @@ button {
 .answer-btn:hover {
     background-color: #384751;
 }
+/*styling for profile page*/
+.profile-card {
+    background-color: #FAFAF5;
+    border: 1 px solid #E6E6E6;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+}
+
+
 
 /*styling for login page/
 
