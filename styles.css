@@ -382,6 +382,21 @@ button {
     text-align: left;
 }
 
+.filter-profile-btn {
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.filter-profile-btn.active {
+    background-color: #426B1F;
+    color: white;
+    border: none;
+
+}
 
 
 /*styling for login page/
