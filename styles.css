@@ -453,4 +453,92 @@ button {
 
 
 
-/*styling for signup page/
+
+/*styling for signup page*/
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 65px);
+  padding: 60px 24px;
+}
+
+.signup h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 20px 24px;
+  font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
+  background: #f2f2f2;
+  border: 1.5px solid #aaa;
+  border-radius: 6px;
+  outline: none;
+  color: #444;
+}
+
+.form-group input:focus {
+  border-color: #4a7c3f;
+}
+
+.form-group input.error {
+  border-color: #c0392b;
+}
+
+.error-msg {
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin-top: -12px;
+  display: none;
+}
+
+.error-msg.visible {
+  display: block;
+}
+
+.start-btn {
+  width: 100%;
+  padding: 20px;
+  background: #4a7c3f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+
+
+.start-btn:hover {
+  background: #3d6934;
+}
+
+.login-link {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.login-link a {
+  color: #4a7c3f;
+  font-weight: 600;
+  text-decoration: none;
+}
