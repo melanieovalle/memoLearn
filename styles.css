@@ -512,8 +512,8 @@ button {
   display: block;
 }
 
-.start-btn {
-  width: 100%;
+.start-btn-signup {
+  width: auto;
   padding: 20px;
   background: #4a7c3f;
   color: #fff;
@@ -523,6 +523,7 @@ button {
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
+  align-items: center;
 }
 
 
