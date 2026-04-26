@@ -492,7 +492,7 @@ button {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 30px;
+    gap: 20px;
     position: relative;
     align-items: center;
 }
@@ -541,6 +541,23 @@ button {
     border: none;
 }
 
+#dots {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #CCC;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #426B1F;
+}
 /*styling for login page/
 
 

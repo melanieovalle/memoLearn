@@ -53,16 +53,46 @@
             document.getElementById("testimonial-text").textContent = t.text;
             document.getElementById("testimonial-name").textContent = t.name;
             document.getElementById("testimonial-school").textContent = t.school;
+
+            dots();
         }
 
         function nextTestimonials () {
-            currentIndex = (currentIndex + 1) % currentTestimonial.length;
-            displayTestimonial();
+            if (currentIndex < currentTestimonial.length -1) {
+                currentIndex++;
+                displayTestimonial();
+            } else {
+                document.getElementById("testimonial-text").textContent = "Moving to the next page..."
+                document.getElementById("testimonial-name").textContent = "";
+                document.getElementById("testimonial-school").textContent = "";
+                setTimeout(() => {
+                    window.location.href = "readytostudy.html"
+                }, 800); 
+            }
         }
 
         function prevTestimonials () {
             currentIndex = (currentIndex - 1 + currentTestimonial.length) % currentTestimonial.length;
             displayTestimonial();
+        }
+
+        function dots() {
+            const dotsContainer = document.getElementById("dots");
+            dotsContainer.innerHTML =  "";
+            currentTestimonial.forEach((_, index) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                
+                if (index === currentIndex) {
+                    dot.classList.add("active");
+                }
+
+                dot.onclick = () => {
+                    currentIndex = index;
+                    displayTestimonial();
+                };
+                dotsContainer.appendChild(dot);
+            });
         }
     </script>
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div id="navbar-container">
+      <nav class="navbar">
+        <div class="logo">Memo Learn</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about_us">Who are we</a></li>
+            <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    <main class = "quote">
+        <h1 id = "quote-text">Ready to begin studying?</h1>
+        <div class = "quote-buttons">
+            <button class = "anterior" onclick = "goToTestimonalsPage()">I'd like to return to the testimonials
+            </button>
+
+            <script>
+                function goToTestimonalsPage() {
+                    window.location.href = "testimonials.html"
+                }
+            </script>
+
+            <button class = "next-page" onclick = "goToIndexPage()">
+                I'm ready to start learning
+            </button>
+            <script>
+                function goToIndexPage() {
+                    window.location.href = "index.html"
+                }
+            </script>
+        </div>
+    </main>
+    </body>
+    

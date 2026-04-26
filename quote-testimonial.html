@@ -32,9 +32,15 @@
                 }
             </script>
 
-            <button class = "next-page">
+            <button class = "next-page" onclick = "goToTestimonalsPage()">
                 I'd like to see what other students have to say
             </button>
+
+            <script>
+                function goToTestimonalsPage() {
+                    window.location.href = "testimonials.html"
+                }
+            </script>
         </div>
     </main>
     </body>
@@ -48,7 +54,7 @@
             default: "Welcome! Are you ready to start learning?",
         };
 
-        window.onload = function () {
+        window. window.onload = function () {
             const emotion = localStorage.getItem("selectedEmotion");
             const quoteText = document.getElementById("quote-text");
             quoteText.textContent = quotes[emotion] || quotes.default;
