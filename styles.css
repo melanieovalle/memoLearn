@@ -397,6 +397,35 @@ button {
     border: none;
 }
 
+.testimonial-btn {
+    background-color: #426B1F;
+    color: white;
+    border: none;
+    margin-left: auto;
+}
+
+
+.profile-header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: normal;
+    color: #1a1a1a;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-style: italic;
+}
+
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+
+
 .list-view {
     flex-direction: column;
     align-items: center;
