@@ -459,6 +459,31 @@ button {
     width: 120px;
     height: 120px;
 }
+
+/*styling for quote page*/
+
+.quote {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.quote h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.quote-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
 /*styling for login page/
 
 
