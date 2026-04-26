@@ -23,25 +23,29 @@
     <div class = "emotion-container">
         <h1 class = "emotion-title">How are you feeling about studying today?</h1>
         <div class = "mood-row">
-            <div class = "mood grey">
+            <div class = "mood grey" onclick = "selectEmotion('tired')">
                 <img src = "assets/tiredface.png" alt = "Tired face">
             </div>
-            <div class = "mood red">
+            <div class = "mood red" onclick = "selectEmotion('angry')">
                 <img src = "assets/angryface.png" alt = "Angry face">
             </div>
-            <div class = "mood orange-red">
+            <div class = "mood orange-red" onclick = "selectEmotion('disgruntled')">
                 <img src = "assets/disgruntledface.png" alt = "Disgruntled face">
             </div>
-            <div class = "mood orange">
+            <div class = "mood orange" onclick = "selectEmotion('okay')">
                 <img src = "assets/okayface.png" alt = "Okay face">
             </div>
-            <div class = "mood yellow">
+            <div class = "mood yellow" onclick = "selectEmotion('happy')">
                 <img src = "assets/happyface.png" alt = "Happy face">
             </div>
         </div>
     </div>
-    
-
     </body>
+    <script>
+        function selectEmotion(emotion) {
+            localStorage.setItem("selectedEmotion", emotion);
+            window.location.href = "home.html"
+        }
+    </script>
 </html>
         

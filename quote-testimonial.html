@@ -21,7 +21,7 @@
         </nav>
     </div>
     <main class = "quote">
-        <h1>quote quote </h1>
+        <h1 id = "quote-text">Loading...</h1>
         <div class = "quote-buttons">
             <button class = "anterior">I'm ready to start learning
             </button>
@@ -31,5 +31,21 @@
         </div>
     </main>
     </body>
+    <script>
+        const quotes = {
+            happy: ,
+            tired: ,
+            angry: ,
+            disgruntled: ,
+            okay: ,
+            default: ,
+        };
+
+        window.onload = function () {
+            const emotion = localStorage.getItem("selectedEmotion");
+            const quoteText = document.getElementById("quote-text");
+            quoteText.textContent = quotes[emotion] || quotes.default;
+        }
+    </script>
 </html>
 
