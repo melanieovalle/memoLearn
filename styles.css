@@ -474,8 +474,9 @@ button {
 
 .quote h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: normal;
+    padding: 10px 85px;
 }
 
 .quote-buttons {
@@ -483,6 +484,62 @@ button {
     gap: 20px;
 }
 
+/*styling for testimonials pages*/
+
+.testimonial-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    position: relative;
+    align-items: center;
+}
+
+.testimonial-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+#testimonial-text {
+    max-width: 700px;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 auto;
+}
+
+.testimonial-info h3 {
+    margin: 10px 0 5px;
+}
+
+.testimonial-info p {
+    font-size: 14px;
+    color: #888;
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    transform: translateY(-50%);
+}
+
+.controls button {
+    background-color: #426B1F;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
 
 /*styling for login page/
 

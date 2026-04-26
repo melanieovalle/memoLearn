@@ -23,8 +23,15 @@
     <main class = "quote">
         <h1 id = "quote-text">Loading...</h1>
         <div class = "quote-buttons">
-            <button class = "anterior">I'm ready to start learning
+            <button class = "anterior" onclick = "goToIndexPage()">I'm ready to start learning
             </button>
+
+            <script>
+                function goToIndexPage() {
+                    window.location.href = "index.html"
+                }
+            </script>
+
             <button class = "next-page">
                 I'd like to see what other students have to say
             </button>
@@ -33,12 +40,12 @@
     </body>
     <script>
         const quotes = {
-            happy: ,
-            tired: ,
-            angry: ,
-            disgruntled: ,
-            okay: ,
-            default: ,
+            happy: "Remember, don't study to be a developer; study to understand how the world is built. When you master the logic, the grades and the jobs will follow you.",
+            tired: "Remember why you started. You wanted to solve problems and create. This exhaustion is just the 'processing time' for your big goals.",
+            angry: "Remember, it’s okay to be frustrated. This material is objectively difficult, and feeling overwhelmed doesn't mean you aren't capable—it just means you’re human.",
+            disgruntled: "Remember, any setback is a detour, not a dead end. You’ve overcome hard topics before, and this one is no different—it’s just your turn to win again.",
+            okay: "Remember, your syllabus is just a map, but you are the explorer. Setting your own targets transforms a 'requirement' into a personal conquest.",
+            default: "Welcome! Are you ready to start learning?",
         };
 
         window.onload = function () {
