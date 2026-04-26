@@ -9,19 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <div id="navbar-container">
       <nav class="navbar">
         <div class="logo">Memo Learn</div>
         <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="home.html#about_us">Who are we</a></li>
-            <li><a href="home.html#contact">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html#about_us">Who are we</a></li>
+          <li><a href="home.html#contact">Contact</a></li>
         </ul>
-        </nav>
+      </nav>
     </div>
-
-    <h1> Welcome to <span class="italic-text"> MemoLearn</span> </h1>
+ 
+    <main class="signup">
+      <h1>Join Memo Learn for free.</h1>
+ 
+      <div class="form-group">
+        <input type="email" id="email" placeholder="E-Mail Address" autocomplete="email">
+        <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+ 
+        <input type="password" id="password" placeholder="Password" autocomplete="new-password">
+        <span class="error-msg" id="passwordError">Password needs be at least 6 characters.</span>
+ 
+        <button class="start-btn" onclick="handleSignup()">Continue</button>
+ 
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </main>
+ 
     <script src="main.js"></script>
   </body>
 </html>
+ 
