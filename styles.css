@@ -448,11 +448,59 @@ button {
     transform: scale(1.08);
 }
 
-/*styling for login page/
+/*styling for login page*/
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 65px);
+  padding: 60px 24px;
+}
 
+.login h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
 
+.start-btn-login {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 260px;
+  padding: 20px;
+  background: #4a7c3f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+}
 
+.start-btn-login:hover {
+  background: #3d6934;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.signup-link a {
+  color: #4a7c3f;
+  font-weight: 600;
+  text-decoration: none;
+}
 
 /*styling for signup page*/
 
@@ -513,7 +561,11 @@ button {
 }
 
 .start-btn-signup {
-  width: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 260px;
   padding: 20px;
   background: #4a7c3f;
   color: #fff;
@@ -523,11 +575,11 @@ button {
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
-  align-items: center;
+  text-align: center;
+  align-self: center;
 }
 
-
-
+.start-btn-signup:hover,
 .start-btn:hover {
   background: #3d6934;
 }
