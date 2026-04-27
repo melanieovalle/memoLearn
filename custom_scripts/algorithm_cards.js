@@ -53,6 +53,32 @@ const cards = [
     backHref: "index.html",
   },
   {
+    wrapperClass: "what-graphs",
+    title: "Lets dive into Graphs: What are they?",
+    content: `
+      <div class="content-box">
+        <h2> What are graphs? </h2>
+        <p> Graphs are data structures that represent relationships between objects, made up of <strong>nodes</strong> and <strong>edges</strong>. </p>
+
+      <div class="inner-box">
+        <h4> Directed Graph </h4>
+        <p> Edges have a direction, similar to arrows. Like the Instagram followers. </p>
+      </div>
+
+      <div class="inner-box">
+        <h4> Undirected Graph </h4>
+        <p> Edges have no direction. Example: Facebook friendships. </p>
+      </div>
+
+      <div class="inner-box">
+        <h4> Weighted Graph </h4>
+        <p> Edges have an associated weight or value. Liike the Google Maps distances. </p>
+      </div>
+    `,
+    backLabel: "Wait, I didn't want to study this",
+    backHref: "index.html",
+  },
+  {
     wrapperClass: "practice",
     title: "Question 1: What is the best algorithm to find the shortest paths on graphs?",
     content: `
