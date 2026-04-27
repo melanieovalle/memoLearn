@@ -397,6 +397,35 @@ button {
     border: none;
 }
 
+.testimonial-btn {
+    background-color: #426B1F;
+    color: white;
+    border: none;
+    margin-left: auto;
+}
+
+
+.profile-header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: normal;
+    color: #1a1a1a;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-style: italic;
+}
+
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+
+
 .list-view {
     flex-direction: column;
     align-items: center;
@@ -413,41 +442,151 @@ button {
 /*styling for emotions page*/
 
 .emotion-container {
-    margin-top: 140px;
+    margin-top: 180px;
     text-align: center;
-    padding: 40px;
 }
 
 .emotion-title {
     font-family: 'Times New Roman', serif;
-    font-size: 72px;
+    font-size: 70px;
     font-weight: normal;
     color: black;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .mood-row {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    align-items: center;
+    gap: 50px;
 }
 
 .mood {
-    width: 105px; 
-    height: 105px;
+    width: 100px; 
+    height: 100px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     font-size: 52px;
     cursor: pointer;
     transition: transform 0.2s ease;
+}
+
+.mood img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
 }
 
 .mood:hover {
     transform: scale(1.08);
 }
 
+.grey {
+    width: 120px;
+    height: 120px;
+}
+
+/*styling for quote page*/
+
+.quote {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.quote h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: normal;
+    padding: 10px 85px;
+}
+
+.quote-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/*styling for testimonials pages*/
+
+.testimonial-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.testimonial-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+#testimonial-text {
+    max-width: 700px;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 auto;
+}
+
+.testimonial-info h3 {
+    margin: 10px 0 5px;
+}
+
+.testimonial-info p {
+    font-size: 14px;
+    color: #888;
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    transform: translateY(-50%);
+}
+
+.controls button {
+    background-color: #426B1F;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+#dots {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #CCC;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #426B1F;
+}
 /*styling for login page*/
 
 .login {

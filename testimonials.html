@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div id="navbar-container">
+      <nav class="navbar">
+        <div class="logo">Memo Learn</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about_us">Who are we</a></li>
+            <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <div class = "testimonial-container">
+        <h1>Inspiration</h1>
+        <p id = "testimonial-text"></p>
+
+        <div class = "testimonial-info">
+            <h3 id = "testimonial-name"></h3>
+            <p id = "testimonial-school"></p>
+        </div>
+
+        <div class = "controls">
+            <button onclick = "prevTestimonials()">←</button>
+            <button onclick = "nextTestimonials()">→</button>
+        </div>
+
+        <div id = "dots"></div>
+
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        let currentTestimonial = [];
+        window.onload = function () {
+            const emotion = localStorage.getItem("selectedEmotion");
+            currentTestimonial = testimonials[emotion] || testimonials.default;
+            displayTestimonial();
+        };
+
+        function displayTestimonial() {
+            const t = currentTestimonial[currentIndex];
+            document.getElementById("testimonial-text").textContent = t.text;
+            document.getElementById("testimonial-name").textContent = t.name;
+            document.getElementById("testimonial-school").textContent = t.school;
+
+            dots();
+        }
+
+        function nextTestimonials () {
+            if (currentIndex < currentTestimonial.length -1) {
+                currentIndex++;
+                displayTestimonial();
+            } else {
+                document.getElementById("testimonial-text").textContent = "Moving to the next page..."
+                document.getElementById("testimonial-name").textContent = "";
+                document.getElementById("testimonial-school").textContent = "";
+                setTimeout(() => {
+                    window.location.href = "readytostudy.html"
+                }, 800); 
+            }
+        }
+
+        function prevTestimonials () {
+            currentIndex = (currentIndex - 1 + currentTestimonial.length) % currentTestimonial.length;
+            displayTestimonial();
+        }
+
+        function dots() {
+            const dotsContainer = document.getElementById("dots");
+            dotsContainer.innerHTML =  "";
+            currentTestimonial.forEach((_, index) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                
+                if (index === currentIndex) {
+                    dot.classList.add("active");
+                }
+
+                dot.onclick = () => {
+                    currentIndex = index;
+                    displayTestimonial();
+                };
+                dotsContainer.appendChild(dot);
+            });
+        }
+    </script>
+
+    <script>
+        const testimonials = {
+            happy: [
+                {
+                    text:"I used to get intimidated by complex algorithms. Now, I see them as puzzles that help my brain 'level up.' Every difficult chapter is just a new opportunity to prove to myself how much I can grow.",
+                    name: "Makara Shashi",
+                    school: "NYU '27",
+                },
+                {
+                    text:"I used to study just to pass, but once I started setting my own 'deep dive' targets, it stopped feeling like a chore. Mastering the why behind the concept made the 'A' feel like a side effect rather than the main goal.",
+                    name: "Chiharu Yuu",
+                    school: "Brown '26",
+                }
+            ],
+            tired: [
+                {
+                    text:"When I’m exhausted, I stop thinking about the test and start thinking about the people I want to help with my degree. Shifting from 'passing' to 'purpose' recharges my batteries.",
+                    name: "Adisa Dayo",
+                    school: "UCLA '25",
+                },
+                {
+                    text:"I shifted my mindset from 'I have to do this' to 'I get to learn this.' It’s a small change, but it makes the late nights feel like an investment in myself rather than a punishment.",
+                    name: "Rani Yue",
+                    school: "Columbia '26",
+                }
+            ],
+            angry: [
+                {
+                    text:"Sometimes you just need to admit that a subject is hard. Once I stopped pretending I was 'fine' and embraced the frustration, I actually found the clarity to start studying again.",
+                    name: "Wren Ratnam",
+                    school: "Tufts '27",
+                },
+                {
+                    text:"When my anger makes me want to close my books forever, I commit to doing just one practice problem. Usually, once I get that one right, the momentum carries me through the rest.",
+                    name: "Naseem Ainsley",
+                    school: "Stanford '25",
+                }
+            ],
+            disgruntled: [
+                {
+                    text:"I viewed a C- as a dead end. But then I reframed it as a 'diagnostic test'—it showed me exactly which concepts I needed to strengthen. That 'failure' was actually the roadmap to my eventual success.",
+                    name: "Yasmina Ryana",
+                    school: "ASU '27",
+                },
+                {
+                    text:"I stopped studying because I 'had to' and started studying because I want to be the kind of engineer who builds accessible tech. When the 'Why' is personal, the 'How' becomes much easier.",
+                    name: "Saruman Malai",
+                    school: "Harvard '26",
+                }
+            ],
+            okay: [
+                {
+                    text:"I stopped saying 'I'm bad at math' and started saying 'I haven't mastered this logic yet.' Shifting my focus to the process of debugging rather than the frustration of the bug saved my sanity and my GPA.",
+                    name: "Marcellina Omri",
+                    school: "Brown '25",
+                },
+                {
+                    text:"Choosing my own project for my Web Dev elective allowed me to focus on UI/UX, which I’m obsessed with. When you own your learning path, the motivation never runs dry.",
+                    name: "Abida Anastazija",
+                    school: "Penn State '27",
+                }
+            ]
+        }
+    </script>
