@@ -10,6 +10,7 @@ const btnNextLabel = document.getElementById("btn-next-label");
 
 function loadCards() {
   const card = cards[current];
+  if (card.lessonName) localStorage.setItem("lessonName", card.lessonName);
 
   // Update wrapper class for per-page styling
   document.body.firstElementChild.className = card.wrapperClass ?? "";
@@ -40,11 +41,19 @@ function loadCards() {
   }
 
   // Next button
-  const isLast = current === cards.length - 1;
-  btnNextLabel.textContent = card.nextLabel ?? (isLast ? "Let's practice" : "Next");
-  btnNext.onclick = isLast
-    ? () => window.location.href = (card.nextHref ?? "practice.html")
+  // const isLast = current === cards.length - 2;
+  // btnNextLabel.textContent = card.nextLabel ?? (isLast ? "Let's practice" : "Next");
+  // btnNext.onclick = isLast
+  //   ? () => window.location.href = (card.nextHref ?? "practice.html")
+  //   : () => { current++; loadCards(); };
+  // Next button
+  btnNextLabel.textContent = card.nextLabel ?? "Next";
+  btnNext.hidden = card.hideNext ?? false;
+  btnNext.onclick = card.nextHref
+    ? () => window.location.href = card.nextHref
     : () => { current++; loadCards(); };
 }
+  // btnBack.hidden = card.hideBack ?? (card.backHref ? false : current === 0);
+
 
 loadCards();

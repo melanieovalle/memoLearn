@@ -1,6 +1,7 @@
 const cards = [
   {
     wrapperClass: "welcome-page",
+    lessonName: "human computer interaction",
     title: "Welcome to Human Computer Interaction!",
     content: `
       <p>This material is designed to break down complex concepts into smaller, more accessible parts,
@@ -11,8 +12,12 @@ const cards = [
         <li>Cognitive Biases</li>
       </ul>
       <p>Why should I care?</p>
-      <p>Well... 
-      </p>
+      <p>Well... Human Computer Interaction is what makes technology actually usable.</p>
+        <p>It helps you design systems that people can understand, trust, and enjoy using.
+        Without HCI, even powerful software can feel confusing or frustrating.</p>
+        <p>Understanding users, their goals, and their limitations allows you to build
+        better products, avoid common design mistakes, and create experiences that
+        feel intuitive instead of overwhelming.</p>
     `,
     backLabel: "Wait, I didn't want to study this",
     backHref: "index.html",
@@ -21,7 +26,11 @@ const cards = [
     wrapperClass: "real-world",
     title: "Real world applications:",
     content: `
-      <p>When it comes to </p>
+    <p>When it comes to designing apps, websites, and everyday technology, Human Computer Interaction plays a key role.</p>
+    <p>It helps create intuitive interfaces for things like mobile apps, medical systems,
+    banking platforms, and even car dashboards.</p>
+    <p>By understanding users, tasks, and context, designers can improve usability,
+    reduce errors, and make technology more accessible and efficient for everyone.</p>
     `,
     backLabel: "Wait, I didn't want to study this",
     backHref: "index.html",
@@ -88,6 +97,7 @@ const cards = [
   {
     wrapperClass: "cognitive-bias-page",
     title: "Cognitive Biases",
+    nextLabel: "Let's practice",
     content: `
     <div class="inner-box">
         <h4>False Consensus effect:</h4>
@@ -108,5 +118,29 @@ const cards = [
     `,
     backLabel: "Wait, I didn't want to study this",
     backHref: "index.html",
-  }
+  },
+  {
+    wrapperClass: "practice",
+    title: "Question 1: Which cognitive bias involves overestimating how much others share your views?",
+    hideNext: true,
+    // hideBack: true,
+    content: `
+        <p>Select the correct answer</p>
+        <div class="answers-container">
+        <button class="answer-btn" id="correct-answer"
+            data-feedback="Correct! The False Consensus Effect is when we overestimate how much others think and feel the same way we do."
+            onclick="window.location.href='answers.html'">
+            False Consensus Effect
+        </button>
+        <button class="answer-btn" id="incorrect-answer"
+            data-feedback="Not quite. Confirmation bias is about seeking evidence that confirms existing beliefs. The False Consensus Effect is about assuming others share your views."
+            onclick="window.location.href='answers.html'">
+            Confirmation Bias
+        </button>
+        </div>
+    `,
+    backHref: "index.html",
+    backLabel: "Wait, I didn't want to study this",
+    nextHref: "answers.html",
+    },
 ];

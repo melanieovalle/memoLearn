@@ -302,8 +302,32 @@ button {
     padding-left: 15px;
 }
 
-.content-box ul {
+/* .content-box ul {
     font-size: 20px;
+} */
+ .content-box ul {
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #2c2c2c;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.content-box ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2c2c2c;
+    margin-bottom: 6px;
+}
+
+.inner-box ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2c2c2c;
+    margin-bottom: 4px;
 }
 
 /*styling for diving in page */

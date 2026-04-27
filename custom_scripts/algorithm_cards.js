@@ -1,6 +1,7 @@
 const cards = [
   {
     wrapperClass: "welcome-page",
+    lessonName: "graphs",
     title: "Welcome to Introduction to Algorithms!",
     content: `
       <p>This material is designed to break down complex concepts into smaller, more accessible parts,
@@ -55,6 +56,7 @@ const cards = [
   {
     wrapperClass: "what-graphs",
     title: "Lets dive into Graphs: What are they?",
+    nextLabel: "Let's practice",
     content: `
       <div class="content-box">
         <h2> What are graphs? </h2>
@@ -79,21 +81,26 @@ const cards = [
     backHref: "index.html",
   },
   {
-    wrapperClass: "practice",
-    title: "Question 1: What is the best algorithm to find the shortest paths on graphs?",
-    content: `
-      <p>Select the correct answer</p>
-
-      <div class = answers-container>
-        <button class = "answer-btn" id="correct-answer" onclick="window.location.href='answers.html'">
-          BFS
-        </button>
-        <button class = "answer-btn" id="incorrect-answer" onclick="window.location.href='answers.html'">
-          DFS
-        </button>
-      </div>
-    `,
-    backLabel: "Wait, I didn't want to study this",
-    backHref: "index.html",
-  }
+  wrapperClass: "practice",
+  title: "Question 1: What is the best algorithm to find the shortest paths on graphs?",
+  hideNext: true,
+  // hideBack: true,
+  content: `
+    <p>Select the correct answer</p>
+    <div class="answers-container">
+      <button class="answer-btn" id="correct-answer"
+        data-feedback="BFS explores nodes level by level. In an unweighted graph, it guarantees the shortest path (fewest edges) from source to all other nodes."
+        onclick="window.location.href='answers.html'">
+        BFS
+      </button>
+      <button class="answer-btn" id="incorrect-answer"
+        data-feedback="DFS goes deep along one path before backtracking — it does not guarantee the shortest path. BFS is the right choice for shortest path problems."
+        onclick="window.location.href='answers.html'">
+        DFS
+      </button>
+    </div>
+  `,
+  backHref: "index.html",
+  backLabel: "Wait, I didn't want to study this",
+},
 ];

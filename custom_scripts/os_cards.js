@@ -1,6 +1,7 @@
 const cards = [
   {
     wrapperClass: "welcome-page",
+    lessonName: "operating systems",
     title: "Welcome to Operating Systems!",
     content: `
       <p>This material is designed to break down complex concepts into smaller, more accessible parts,
@@ -58,6 +59,7 @@ const cards = [
   {
     wrapperClass: "threads-page",
     title: "Threads and Process",
+    nextLabel: "Let's practice",
     content: `
       <p>What's the difference between a thread and a process?</p>
       <div class="inner-box">
@@ -82,5 +84,29 @@ const cards = [
     `,
     backLabel: "Wait, I didn't want to study this",
     backHref: "index.html",
-  }
+  },
+  {
+    wrapperClass: "practice",
+    title: "Question 1: Which statement best describes the difference between a process and a thread?",
+    hideNext: true,
+    // hideBack: true,
+    content: `
+        <p>Select the correct answer</p>
+        <div class="answers-container">
+        <button class="answer-btn" id="correct-answer"
+            data-feedback="Correct! A process is an independent running program. Threads exist within a process, share memory, and allow for concurrency."
+            onclick="window.location.href='answers.html'">
+            A process is an independent running program, while threads exist within a process and share memory.
+        </button>
+        <button class="answer-btn" id="incorrect-answer"
+            data-feedback="Not quite. It's the other way around — a process is the independent program, and threads live inside processes, not the reverse."
+            onclick="window.location.href='answers.html'">
+            A thread is an independent running program, while processes exist inside threads and share memory.
+        </button>
+        </div>
+    `,
+    backHref: "index.html",
+    backLabel: "Wait, I didn't want to study this",
+    nextHref: "answers.html",
+    },
 ];
