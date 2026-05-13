@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MemoLearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="navbar-container">
+      <nav class="navbar">
+        <div class="logo">Memo Learn</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html#about_us">Who are we</a></li>
+          <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="signup">
+      <h1>Join <span class="italic-text">MemoLearn</span> for free.</h1>
+
+      <div id="signupForm" class="form-group">
+        <div class="question">
+          <label>Which of the following best describes why you chose Memo Learn?</label>
+          <div class="radio-group">
+            <input type="radio" id="reason1" name="reason" value="To improve my study habits">
+            <label for="reason1">To improve my study habits</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="reason2" name="reason" value="To make learning more efficient">
+            <label for="reason2">To make learning more efficient</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="reason3" name="reason" value="Recommended by a friend">
+            <label for="reason3">Recommended by a friend</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="reason4" name="reason" value="Other">
+            <label for="reason4">Other</label>
+          </div>
+        </div>
+        <span class="error-msg" id="reasonError">Please select a reason.</span>
+
+        <button type="button" class="start-btn-signup" onclick="handleSignup3()">Finish</button>
+      </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

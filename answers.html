@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <title>MemoLearn</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
-
   <body>
+<<<<<<< HEAD
     <div class="">
 
         <div id="navbar-container">
@@ -60,6 +58,39 @@
         
         
         <script src="verifyQuestions.js"></script>
+=======
+    <div id="navbar-container">
+      <nav class="navbar">
+        <div class="logo">Memo Learn</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html#about_us">Who are we</a></li>
+          <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+>>>>>>> 66e501749cc6660022afebc3c2bf4561f1e07d7d
     </div>
+
+    <div class="content-box" id="answer-card">
+      <h2 id="answer-heading"></h2>
+      <p id="answer-explanation"></p>
+      <div class="buttons">
+        <button class="next-page" onclick="window.location.href='topicMastered.html'">
+          Next!
+          <img src="assets/Icon.png" alt="icon go">
+        </button>
+      </div>
+    </div>
+
+    <script>
+        const answer = localStorage.getItem("answer");
+        const correctText = localStorage.getItem("correctFeedback");
+        const incorrectText = localStorage.getItem("incorrectFeedback");
+
+        document.getElementById("answer-heading").textContent =
+            answer === "correct" ? "Correct!" : "Not quite...";
+        document.getElementById("answer-explanation").textContent =
+            answer === "correct" ? correctText : incorrectText;
+    </script>
   </body>
 </html>

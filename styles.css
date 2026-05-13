@@ -302,8 +302,32 @@ button {
     padding-left: 15px;
 }
 
-.content-box ul {
+/* .content-box ul {
     font-size: 20px;
+} */
+ .content-box ul {
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #2c2c2c;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.content-box ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2c2c2c;
+    margin-bottom: 6px;
+}
+
+.inner-box ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2c2c2c;
+    margin-bottom: 4px;
 }
 
 /*styling for diving in page */
@@ -587,11 +611,59 @@ button {
 .dot.active {
     background-color: #426B1F;
 }
-/*styling for login page/
+/*styling for login page*/
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 65px);
+  padding: 60px 24px;
+}
 
+.login h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
 
+.start-btn-login {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 260px;
+  padding: 20px;
+  background: #4a7c3f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+}
 
+.start-btn-login:hover {
+  background: #3d6934;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.signup-link a {
+  color: #4a7c3f;
+  font-weight: 600;
+  text-decoration: none;
+}
 
 /*styling for signup page*/
 
@@ -615,9 +687,6 @@ button {
 .form-group {
   width: 100%;
   max-width: 560px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .form-group input {
@@ -630,6 +699,8 @@ button {
   border-radius: 6px;
   outline: none;
   color: #444;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .form-group input:focus {
@@ -640,10 +711,47 @@ button {
   border-color: #c0392b;
 }
 
+.question {
+  margin-bottom: 20px;
+}
+
+.question label {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #f7f9f5;
+  border: 1px solid #d9e3d4;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0;
+  accent-color: #4a7c3f;
+}
+
+.radio-group label {
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  line-height: 1.4;
+  flex: 1;
+}
+
 .error-msg {
   color: #c0392b;
   font-size: 0.85rem;
   margin-top: -12px;
+  margin-bottom: 20px;
   display: none;
 }
 
@@ -651,8 +759,33 @@ button {
   display: block;
 }
 
-.start-btn {
+.confirmation {
   width: 100%;
+  max-width: 560px;
+  background: #f4fbf1;
+  border: 1px solid #d9e3d4;
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+}
+
+.confirmation h2 {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  color: #2c5a2b;
+}
+
+.confirmation p {
+  margin-bottom: 24px;
+  color: #4b5f4b;
+  line-height: 1.6;
+}
+
+.start-btn-signup {
+  display: block;
+  width: 100%;
+  max-width: 260px;
   padding: 20px;
   background: #4a7c3f;
   color: #fff;
@@ -662,10 +795,36 @@ button {
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
+  text-align: center;
+  margin: 0 auto 20px auto;
 }
 
+.start-btn-signup:hover,
+.start-btn:hover {
+  background: #3d6934;
+}
 
+.back-btn {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  padding: 15px 20px;
+  background: #ccc;
+  color: #444;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.back-btn:hover {
+  background: #bbb;
+}
+
+.start-btn-signup:hover,
 .start-btn:hover {
   background: #3d6934;
 }

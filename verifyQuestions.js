@@ -6,31 +6,15 @@ const incorrectAnswer = document.getElementById("incorrect-answer");
 const correctAnswer = document.getElementById("correct-answer");
 
 if (incorrectAnswer) {
-    incorrectAnswer.addEventListener("click", function () {
-        console.log("incorrect answer selected");
-        localStorage.setItem("answer", "incorrect");
-    });
+  incorrectAnswer.addEventListener("click", function () {
+    localStorage.setItem("answer", "incorrect");
+    localStorage.setItem("incorrectFeedback", incorrectAnswer.dataset.feedback ?? "That's not quite right. Review the material and try again.");
+  });
 }
 
 if (correctAnswer) {
-    correctAnswer.addEventListener("click", function () {
-        console.log("correct answer selected");
-        localStorage.setItem("answer", "correct");
-    });
-}
-
-let correctCard = document.getElementById("correct-answer-card");
-let incorrectCard = document.getElementById("incorrect-answer-card");
-
-if (correctCard || incorrectCard) {
-    const answer = localStorage.getItem("answer");
-
-    console.log("Stored answer:", answer);
-
-    if (answer === "correct") {
-        if (incorrectCard) incorrectCard.style.display = "none";
-    } 
-    else if (answer === "incorrect") {
-        if (correctCard) correctCard.style.display = "none";
-    }
+  correctAnswer.addEventListener("click", function () {
+    localStorage.setItem("answer", "correct");
+    localStorage.setItem("correctFeedback", correctAnswer.dataset.feedback ?? "Well done! That's correct.");
+  });
 }

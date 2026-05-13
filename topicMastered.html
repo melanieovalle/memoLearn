@@ -22,7 +22,16 @@
         </nav>
     </div>
       
-    <h1 style="padding-top: 120px;">You&apos;ve <span class="italic-text">mastered</span> graphs!</h1>
+    <!-- <h1 style="padding-top: 120px;">You&apos;ve <span class="italic-text">mastered</span> graphs!</h1> -->
+
+    <h1 style="padding-top: 120px;">
+      You've <span class="italic-text">mastered</span> <span id="lesson-name"></span>!
+    </h1>
+
+    <script>
+      document.getElementById("lesson-name").textContent = 
+        localStorage.getItem("lessonName") ?? "this topic";
+    </script>
 
   </body>
 </html>
